@@ -6,4 +6,6 @@ target
 /.classpath
 /.project
 /.settings
+/.bloop
+/.metal
 /RUNNING_PID
