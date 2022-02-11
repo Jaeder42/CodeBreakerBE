@@ -6,8 +6,8 @@ target
 /.classpath
 /.project
 /.settings
-# /.bloop
-# /.metals
-# /.vscode
-# /.g8
+/.bloop
+/.metals
+/.vscode
+/.g8
 /RUNNING_PID
