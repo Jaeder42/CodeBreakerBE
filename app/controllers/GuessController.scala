@@ -23,7 +23,6 @@ class GuessController @Inject() (val controllerComponents: ControllerComponents)
     val resultArray = (1 to 6 map (_ => "0")).toArray
     guessArray.zipWithIndex.foreach { case (e, i) =>
       if (e.equals(targetArray(i))) {
-        println(e, i)
         resultArray(i) = "X"
       } else if (
         targetArray
