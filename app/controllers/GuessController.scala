@@ -21,6 +21,7 @@ class GuessController @Inject() (val controllerComponents: ControllerComponents)
     val targetArray = targetTest.target.split("")
     val guessArray = guess.split("")
     val resultArray = (1 to 6 map (_ => "0")).toArray
+
     guessArray.zipWithIndex.foreach { case (e, i) =>
       if (e.equals(targetArray(i))) {
         resultArray(i) = "X"
@@ -31,7 +32,9 @@ class GuessController @Inject() (val controllerComponents: ControllerComponents)
         resultArray(i) = "x"
       }
     }
+
     val result = Result(result = resultArray.mkString)
+    
     Ok(Json.toJson(result).toString())
   }
 }
